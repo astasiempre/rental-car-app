@@ -15,13 +15,13 @@ export const Header = () => {
           <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
           </IconWrapper>
-          First
+          Home
         </StyledLink>
         <StyledLink to="/second">
           <IconWrapper>
             <use href={`${sprite}#icon-logo`} />
           </IconWrapper>
-          Second
+          Catalog
         </StyledLink>
       </Navigation>
     </HeaderContainer>
