@@ -39,16 +39,31 @@ export const CardsGallery = () => {
       {images && (
         <>
           <ul className={css.CardsGallery}>
-            {images.map(({ id, make, img, model, year, rentalPrice }) => (
-              <CardsGalleryItem
-                key={id}
-                url={img}
-                make={make}
-                model={model}
-                year={year}
-                rentalPrice={rentalPrice}
-              />
-            ))}
+            {images.map(
+              ({
+                id,
+                make,
+                img,
+                model,
+                year,
+                rentalPrice,
+                address,
+                rentalCompany,
+                description
+              }) => (
+                <CardsGalleryItem
+                  key={id}
+                  url={img}
+                  make={make}
+                  model={model}
+                  year={year}
+                  rentalPrice={rentalPrice}
+                  address={address}
+                  rentalCompany={rentalCompany}
+                  description={description}
+                />
+              )
+            )}
           </ul>
         </>
       )}

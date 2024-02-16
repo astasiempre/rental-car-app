@@ -75,11 +75,29 @@ font-weight: 500;
 }
 
 .CardsGalleryItemBottomBox {
-    width: 100%;
-    height: auto;
-    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 274px;
+    height: 40px;
+    /* background-color: red; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
+.CardsGalleryItemCity,
+.CardsGalleryItemCountry,
+.CardsGalleryItemRentalCompany,
+.CardsGalleryItemDescription {
+    font-family: var(--font-family);
+        
+        font-size: 12px;
+        line-height: 1.5;
+        color: rgba(18, 20, 23, 0.5);
+}
+
+.Stick {
+    margin: 0 3px;
+}
 
 
 
