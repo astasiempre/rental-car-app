@@ -40,6 +40,7 @@
 .CardsGalleryItemBox {
     width: 100%;
     height: 72px;
+    margin-bottom: 28px;
     /* background-color: aqua ; */
 }
 
@@ -51,6 +52,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        margin-bottom: 8px;
 }
 
 /* .ImageGalleryItemWrapMakeModelYear {
@@ -79,6 +81,7 @@ font-weight: 500;
     flex-wrap: wrap;
     width: 274px;
     height: 40px;
+    overflow: hidden;
     /* background-color: red; */
     /* justify-content: space-between; */
     /* align-items: center; */
@@ -87,7 +90,10 @@ font-weight: 500;
 .CardsGalleryItemCity,
 .CardsGalleryItemCountry,
 .CardsGalleryItemRentalCompany,
-.CardsGalleryItemDescription {
+.CardsGalleryItemDescription,
+.CardsGalleryKey,
+.CardsGalleryItemMakeDown,
+.CardsGalleryItemAccessory {
     font-family: var(--font-family);
         
         font-size: 12px;
@@ -99,5 +105,31 @@ font-weight: 500;
     margin: 0 3px;
 }
 
+.CardsGalleryItemButton {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        
+        border-radius: 12px;
+            
+            width: 274px;
+            height: 44px;
+            font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.42857;
+                color: #fff;
+                background: #3470ff;
+                border: none;
+}
 
-
+.CardsGalleryLoadMoreButton {
+    font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #3470ff;
+}

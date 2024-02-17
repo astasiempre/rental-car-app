@@ -12,6 +12,13 @@
 
 
 } */
+
+.CardsGalleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Центрирование элементов по горизонтали */
+} 
 .CardsGallery {
     display: flex;
         flex-wrap: wrap;
@@ -25,3 +32,8 @@
         margin-right: auto;
         justify-content: space-between;
 }
+
+.CardsGalleryLoadMoreButton {
+    margin-top: 100px;
+}
+
