@@ -24,9 +24,22 @@ export const fetchRentalCarData = async (page = 1, limit = 12) => {
   try {
     const response = await rentalCarInstance.get('/adverts', {
       params: {
-        page,
-        limit,
+        page: page, 
+        limit: limit, 
       }
+    });
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching rental car data:', error);
+    throw error;
+  }
+};
+
+export const fetchAllRentalCarData = async () => {
+  try {
+    const response = await rentalCarInstance.get('/adverts', {
+     
     });
     console.log(response.data);
     return response.data;
