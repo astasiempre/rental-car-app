@@ -14,18 +14,18 @@ export const CardsGallery = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
- 
+
   useEffect(() => {
     const allImages = async () => {
-      try { 
-        const res = await fetchAllRentalCarData(); 
- 
-        setAllCars(res); 
-      } catch (error) { 
-        console.error(error); 
-      } 
+      try {
+        const res = await fetchAllRentalCarData();
+
+        setAllCars(res);
+      } catch (error) {
+        console.error(error);
+      }
     };
-    
+
     const fetchCars = async () => {
       try {
         setLoading(true);
@@ -55,10 +55,7 @@ export const CardsGallery = () => {
     if (filter === 'All Models') {
       setImages(originalImages);
       setCurrentPage(1);
-      
     } else {
-     
-      
       const filteredImages = allCars.filter(({ make }) => make === filter);
       setImages(filteredImages);
     }
@@ -82,6 +79,12 @@ export const CardsGallery = () => {
             rentalCompany,
             description,
             accessories,
+            engineSize,
+            fuelConsumption,
+            type,
+            functionalities,
+            rentalConditions,
+            mileage,
           }) => (
             <CardsGalleryItem
               key={id}
@@ -95,6 +98,12 @@ export const CardsGallery = () => {
               description={description}
               _id={id}
               accessories={accessories}
+              engineSize={engineSize}
+              fuelConsumption={fuelConsumption}
+              type={type}
+              functionalities={functionalities}
+              rentalConditions={rentalConditions}
+              mileage={mileage}
             />
           )
         )}

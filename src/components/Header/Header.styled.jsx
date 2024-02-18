@@ -13,7 +13,7 @@ export const Navigation = styled.nav`
 
 export const StyledLink = styled(Link)`
   padding: 8px 16px;
-  color: #ffffff; /* White text color */
+  color: #ffffff; 
   text-shadow:
     0 0 5px #00baff,
     0 0 10px #00baff,
@@ -26,7 +26,7 @@ export const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: #00baff; /* Blue text color on hover/focus */
+    color: #00baff; 
     text-shadow:
       0 0 5px #00baff,
       0 0 10px #00baff,
